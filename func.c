@@ -2,51 +2,25 @@
 #include "helpers.h"
 #include <stdbool.h>
 
-int main()
+float calculate_tax (float price,float tax_rate)
+int main (int argc,char *argv[])
 {
-    string name = get_string("What is your name?");
+    char argc, char *argv[]
+   
+   printf("The number of arguments were %d\n", argc);
+   
+   for (int i=0 ;i,argc;i++) argv[1]
+    printf("The argument #%d was %s\n" i+1, argv[i])
+    
 
-    printf("The second letter of your name is %c\n", name[1]);
+float tax_rate = get_float("What is the tax rate in your area?")
+float item_price = price( "what is the item price")
+float item_tax = calculate_tax(user_price, user_tax_rate)
 
-    printf("The first letter of your name as an int is %i\n", name[0]);
+float calculate_tax (float price,float tax_rate){
 
-    //Example of explicit casting
-    int letterInt = (int)name[0]; 
-    printf("The first letter of your name as a cast int is %i\n", letterInt);
-
-    //The ASCII range for an upper case char is 65-90
-    //The ASCII range for a lower case char is 97-122
-
-    char str[]= "hello world";
-
-    //How to figure out the size of data type array.
-    int strLen = sizeof(str)/sizeof(str[0]);
-
-    printf("The size of the \"hello world\" is %i elements.\n", strLen);
-
-    //Iterating over every element of char array and printing the null char
-    for (int i = 0; i< strLen;i++){
-        if(str[i]== '\0'){
-            printf("\\0\n");
-        }else{
-            printf("%c\n", str[i]);
-        }
-    }
-
-    int i = 0;
-
-    //Will print a string of any length until the null char
-    while(str[i] != '\0'){
-            printf("%c\n", str[i]);
-            i++;
-    }
-
-    char the_letter_z = 'z';
-
-    the_letter_z = the_letter_z +2;
-
-    printf("The letter z incremented by 1 is %c\n", the_letter_z);
-
-
+    float (tax = price * tax_rate);
+}
+}
     return 0;
 }
