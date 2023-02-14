@@ -1,11 +1,12 @@
 #include <stdio.h>
-#include "helpers.h"
+#include <helpers.h>
 #include <stdbool.h>
+#include <encode.h>
 
 float calculate_tax (float price,float tax_rate)
 int main (int argc,char *argv[])
 {
-    char argc, char *argv[]
+char argc, char *argv[]
    
    printf("The number of arguments were %d\n", argc);
    
@@ -21,6 +22,6 @@ float calculate_tax (float price,float tax_rate){
 
     float (tax = price * tax_rate);
 }
-}
+{
     return 0;
 }
