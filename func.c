@@ -16,11 +16,12 @@ char argc, char *argv[]
 
 float tax_rate = get_float("What is the tax rate in your area?")
 float item_price = price( "what is the item price")
-float item_tax = calculate_tax(user_price, user_tax_rate)
+float item_tax = calculate_tax(user_price, tax_rate)
 
 float calculate_tax (float price,float tax_rate){
 
     float (tax = price * tax_rate);
+printf(Your item tax is %d, tax)
 }
 {
     return 0;
